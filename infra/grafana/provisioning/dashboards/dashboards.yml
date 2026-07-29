@@ -1,0 +1,9 @@
+apiVersion: 1
+providers:
+  - name: Athena
+    orgId: 1
+    folder: Athena
+    type: file
+    options:
+      path: /var/lib/grafana/dashboards
+

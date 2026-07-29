@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#f5f7f8"/>
+  <rect width="220" height="540" fill="#fff" stroke="#d8dee4"/>
+  <rect x="244" y="76" width="150" height="110" rx="8" fill="#fff" stroke="#d8dee4"/>
+  <rect x="414" y="76" width="150" height="110" rx="8" fill="#fff" stroke="#d8dee4"/>
+  <rect x="584" y="76" width="150" height="110" rx="8" fill="#fff" stroke="#d8dee4"/>
+  <rect x="754" y="76" width="150" height="110" rx="8" fill="#fff" stroke="#d8dee4"/>
+  <text x="268" y="112" font-family="Arial" font-size="12" fill="#64748b">Prompt tokens</text>
+  <text x="268" y="154" font-family="Arial" font-size="28" font-weight="700" fill="#172026">12k</text>
+  <text x="438" y="112" font-family="Arial" font-size="12" fill="#64748b">Completion tokens</text>
+  <text x="438" y="154" font-family="Arial" font-size="28" font-weight="700" fill="#172026">6k</text>
+  <rect x="244" y="214" width="660" height="190" rx="8" fill="#fff" stroke="#d8dee4"/>
+  <polyline points="274,354 344,310 414,332 484,270 554,288 624,246 694,262 764,228 834,240" fill="none" stroke="#0f766e" stroke-width="4"/>
+  <text x="268" y="248" font-family="Arial" font-size="14" font-weight="700" fill="#172026">Grafana Metrics</text>
+</svg>
+

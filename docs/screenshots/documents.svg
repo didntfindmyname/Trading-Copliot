@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#f5f7f8"/>
+  <rect width="220" height="540" fill="#fff" stroke="#d8dee4"/>
+  <rect x="244" y="76" width="676" height="74" rx="8" fill="#fff" stroke="#d8dee4"/>
+  <rect x="266" y="94" width="250" height="36" rx="6" fill="#fff" stroke="#d8dee4"/>
+  <rect x="532" y="94" width="250" height="36" rx="6" fill="#fff" stroke="#d8dee4"/>
+  <rect x="798" y="94" width="94" height="36" rx="6" fill="#0f766e"/>
+  <text x="824" y="117" font-family="Arial" font-size="13" fill="#fff">Upload</text>
+  <rect x="244" y="174" width="676" height="278" rx="8" fill="#fff" stroke="#d8dee4"/>
+  <text x="268" y="207" font-family="Arial" font-size="14" font-weight="700" fill="#172026">Document Inventory</text>
+  <line x1="244" y1="226" x2="920" y2="226" stroke="#d8dee4"/>
+  <text x="268" y="260" font-family="Arial" font-size="12" fill="#64748b">Market Data Runbook</text>
+  <text x="496" y="260" font-family="Arial" font-size="12" fill="#64748b">runbook.md</text>
+  <text x="676" y="260" font-family="Arial" font-size="12" fill="#64748b">indexed</text>
+  <text x="780" y="260" font-family="Arial" font-size="12" fill="#64748b">18</text>
+</svg>
+

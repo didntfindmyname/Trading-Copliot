@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540">
+  <rect width="960" height="540" fill="#eef3f3"/>
+  <rect x="330" y="92" width="300" height="356" rx="8" fill="#fff" stroke="#d8dee4"/>
+  <rect x="354" y="116" width="40" height="40" rx="6" fill="#0f766e"/>
+  <text x="410" y="132" font-family="Arial" font-size="18" font-weight="700" fill="#172026">Athena Copilot</text>
+  <text x="410" y="153" font-family="Arial" font-size="13" fill="#64748b">Quant engineering workspace</text>
+  <rect x="354" y="188" width="252" height="40" rx="6" fill="#f8fafc" stroke="#d8dee4"/>
+  <rect x="358" y="192" width="122" height="32" rx="4" fill="#0f766e"/>
+  <text x="402" y="213" font-family="Arial" font-size="13" fill="#fff">Login</text>
+  <text x="519" y="213" font-family="Arial" font-size="13" fill="#172026">Register</text>
+  <rect x="354" y="256" width="252" height="40" rx="6" fill="#fff" stroke="#d8dee4"/>
+  <rect x="354" y="322" width="252" height="40" rx="6" fill="#fff" stroke="#d8dee4"/>
+  <rect x="354" y="386" width="252" height="40" rx="6" fill="#172026"/>
+  <text x="454" y="411" font-family="Arial" font-size="14" font-weight="700" fill="#fff">Continue</text>
+</svg>
+
