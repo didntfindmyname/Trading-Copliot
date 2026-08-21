@@ -1,12 +1,14 @@
 from __future__ import annotations
 
 from io import BytesIO
+from typing import cast
 
 from fastapi import UploadFile
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.models.user import User
 from app.services.document_service import DocumentService
+from app.services.vector_store import VectorStore
 
 
 class FakeVectorStore:
@@ -40,7 +42,7 @@ async def test_document_upload_and_index(session: AsyncSession) -> None:
         file=BytesIO(b"# Runbook\nRestart ingestion from the committed offset."),
     )
     vector_store = FakeVectorStore()
-    service = DocumentService(session, vector_store=vector_store)
+    service = DocumentService(session, vector_store=cast(VectorStore, vector_store))
     document = await service.upload(user=user, file=file, title="Runbook")
     indexed = await service.index(document.id)
 

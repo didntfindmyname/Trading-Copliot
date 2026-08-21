@@ -2,9 +2,9 @@ from __future__ import annotations
 
 from collections.abc import AsyncGenerator
 
-import httpx
-
 from app.core.config import settings
+from app.llm import ChatMessage, LLMProvider
+from app.llm.factory import build_llm_provider
 from app.schemas.document import SearchResult
 
 
@@ -16,6 +16,9 @@ class LLMResponse:
 
 
 class LLMService:
+    def __init__(self, provider: LLMProvider | None = None) -> None:
+        self.provider = provider or build_llm_provider()
+
     async def answer(
         self,
         *,
@@ -25,7 +28,7 @@ class LLMService:
     ) -> LLMResponse:
         prompt = self._render_prompt(question=question, context=context, memory=memory)
         if settings.llm_provider == "openai" and settings.openai_api_key:
-            return await self._answer_openai(prompt)
+            return await self._answer_provider(prompt)
         answer = self._answer_local(question=question, context=context, memory=memory)
         return LLMResponse(
             answer=answer,
@@ -64,24 +67,17 @@ class LLMService:
             f"Question: {question}\nAnswer:"
         )
 
-    async def _answer_openai(self, prompt: str) -> LLMResponse:
-        async with httpx.AsyncClient(timeout=60) as client:
-            response = await client.post(
-                "https://api.openai.com/v1/chat/completions",
-                headers={"Authorization": f"Bearer {settings.openai_api_key}"},
-                json={
-                    "model": settings.openai_model,
-                    "messages": [{"role": "user", "content": prompt}],
-                    "temperature": 0.2,
-                },
-            )
-            response.raise_for_status()
-            payload = response.json()
-        usage = payload.get("usage", {})
+    async def _answer_provider(self, prompt: str) -> LLMResponse:
+        result = await self.provider.generate(
+            messages=[ChatMessage(role="user", content=prompt)],
+            model=settings.openai_model,
+            temperature=0.2,
+            timeout_seconds=60,
+        )
         return LLMResponse(
-            answer=payload["choices"][0]["message"]["content"],
-            prompt_tokens=int(usage.get("prompt_tokens", self._estimate_tokens(prompt))),
-            completion_tokens=int(usage.get("completion_tokens", 0)),
+            answer=result.content,
+            prompt_tokens=result.prompt_tokens or self._estimate_tokens(prompt),
+            completion_tokens=result.completion_tokens,
         )
 
     def _answer_local(

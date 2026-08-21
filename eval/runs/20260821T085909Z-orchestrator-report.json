@@ -1,0 +1,1336 @@
+{
+  "created_at": "2026-08-21T08:59:09.349659+00:00",
+  "dataset": "eval\\tasks.json",
+  "mode": "orchestrator",
+  "summary": {
+    "task_count": 60,
+    "success_rate": 0.0,
+    "route_accuracy": 1.0,
+    "mode_accuracy": 1.0,
+    "agent_selection_precision": 1.0,
+    "agent_selection_recall": 1.0,
+    "agent_selection_f1": 1.0,
+    "avg_tool_calls": 0,
+    "avg_latency_ms": 0.747,
+    "p50_latency_ms": 0.638,
+    "p95_latency_ms": 1.433,
+    "category_breakdown": {
+      "code_generation": {
+        "task_count": 8,
+        "success_rate": 0.0,
+        "route_accuracy": 1.0,
+        "mode_accuracy": 1.0,
+        "avg_latency_ms": 0.639
+      },
+      "document_retrieval": {
+        "task_count": 8,
+        "success_rate": 0.0,
+        "route_accuracy": 1.0,
+        "mode_accuracy": 1.0,
+        "avg_latency_ms": 1.141
+      },
+      "failure_recovery": {
+        "task_count": 8,
+        "success_rate": 0.0,
+        "route_accuracy": 1.0,
+        "mode_accuracy": 1.0,
+        "avg_latency_ms": 0.339
+      },
+      "finance_workflows": {
+        "task_count": 4,
+        "success_rate": 0.0,
+        "route_accuracy": 1.0,
+        "mode_accuracy": 1.0,
+        "avg_latency_ms": 0.953
+      },
+      "multi_agent_reasoning": {
+        "task_count": 8,
+        "success_rate": 0.0,
+        "route_accuracy": 1.0,
+        "mode_accuracy": 1.0,
+        "avg_latency_ms": 0.563
+      },
+      "multi_hop_rag": {
+        "task_count": 8,
+        "success_rate": 0.0,
+        "route_accuracy": 1.0,
+        "mode_accuracy": 1.0,
+        "avg_latency_ms": 0.912
+      },
+      "sql_querying": {
+        "task_count": 8,
+        "success_rate": 0.0,
+        "route_accuracy": 1.0,
+        "mode_accuracy": 1.0,
+        "avg_latency_ms": 0.82
+      },
+      "tool_selection": {
+        "task_count": 8,
+        "success_rate": 0.0,
+        "route_accuracy": 1.0,
+        "mode_accuracy": 1.0,
+        "avg_latency_ms": 0.713
+      }
+    },
+    "outcome_counts": {
+      "failed": 60
+    }
+  },
+  "results": [
+    {
+      "task_id": "doc-001",
+      "category": "document_retrieval",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.1314000003039837,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "doc-002",
+      "category": "document_retrieval",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.6635000027017668,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "doc-003",
+      "category": "document_retrieval",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.577899998461362,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "doc-004",
+      "category": "document_retrieval",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.4841999980271794,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "doc-005",
+      "category": "document_retrieval",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.9081999998888932,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "doc-006",
+      "category": "document_retrieval",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.894299995910842,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "doc-007",
+      "category": "document_retrieval",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.036400004522875,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "doc-008",
+      "category": "document_retrieval",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.4327999961096793,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "rag-001",
+      "category": "multi_hop_rag",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.1818999992101453,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "rag-002",
+      "category": "multi_hop_rag",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.72309999470599,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "rag-003",
+      "category": "multi_hop_rag",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.7868999964557588,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "rag-004",
+      "category": "multi_hop_rag",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.1343999940436333,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "rag-005",
+      "category": "multi_hop_rag",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.8820000002742745,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "rag-006",
+      "category": "multi_hop_rag",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.468999998702202,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "rag-007",
+      "category": "multi_hop_rag",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.4160000025876798,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "rag-008",
+      "category": "multi_hop_rag",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.706200000422541,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "sql-001",
+      "category": "sql_querying",
+      "expected_agents": [
+        "sql"
+      ],
+      "selected_agents": [
+        "sql"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.4130999988992698,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "sql-002",
+      "category": "sql_querying",
+      "expected_agents": [
+        "sql"
+      ],
+      "selected_agents": [
+        "sql"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.6367999958456494,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "sql-003",
+      "category": "sql_querying",
+      "expected_agents": [
+        "sql"
+      ],
+      "selected_agents": [
+        "sql"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.6333999990602024,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "sql-004",
+      "category": "sql_querying",
+      "expected_agents": [
+        "sql"
+      ],
+      "selected_agents": [
+        "sql"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.25270000332966447,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "sql-005",
+      "category": "sql_querying",
+      "expected_agents": [
+        "sql"
+      ],
+      "selected_agents": [
+        "sql"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.1250999959884211,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "sql-006",
+      "category": "sql_querying",
+      "expected_agents": [
+        "sql"
+      ],
+      "selected_agents": [
+        "sql"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.2086999995517544,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "sql-007",
+      "category": "sql_querying",
+      "expected_agents": [
+        "sql"
+      ],
+      "selected_agents": [
+        "sql"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.6872000012663193,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "sql-008",
+      "category": "sql_querying",
+      "expected_agents": [
+        "sql"
+      ],
+      "selected_agents": [
+        "sql"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.6012999947415665,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "code-001",
+      "category": "code_generation",
+      "expected_agents": [
+        "code"
+      ],
+      "selected_agents": [
+        "code"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.5563000013353303,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "code-002",
+      "category": "code_generation",
+      "expected_agents": [
+        "code"
+      ],
+      "selected_agents": [
+        "code"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.5649999948218465,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "code-003",
+      "category": "code_generation",
+      "expected_agents": [
+        "code",
+        "sql"
+      ],
+      "selected_agents": [
+        "sql",
+        "code"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.6886999981361441,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "code-004",
+      "category": "code_generation",
+      "expected_agents": [
+        "code"
+      ],
+      "selected_agents": [
+        "code"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.4782999967574142,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "code-005",
+      "category": "code_generation",
+      "expected_agents": [
+        "code"
+      ],
+      "selected_agents": [
+        "code"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.40579999767942354,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "code-006",
+      "category": "code_generation",
+      "expected_agents": [
+        "code"
+      ],
+      "selected_agents": [
+        "code"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.6446999977924861,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "code-007",
+      "category": "code_generation",
+      "expected_agents": [
+        "code"
+      ],
+      "selected_agents": [
+        "code"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.0070999996969476,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "code-008",
+      "category": "code_generation",
+      "expected_agents": [
+        "code"
+      ],
+      "selected_agents": [
+        "code"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.7689999983995222,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "tool-001",
+      "category": "tool_selection",
+      "expected_agents": [
+        "research",
+        "sql"
+      ],
+      "selected_agents": [
+        "research",
+        "sql"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.8388000060222112,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "tool-002",
+      "category": "tool_selection",
+      "expected_agents": [
+        "sql",
+        "code"
+      ],
+      "selected_agents": [
+        "sql",
+        "code"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.5221000028541312,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "tool-003",
+      "category": "tool_selection",
+      "expected_agents": [
+        "research",
+        "code"
+      ],
+      "selected_agents": [
+        "research",
+        "code"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.7651999985682778,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "tool-004",
+      "category": "tool_selection",
+      "expected_agents": [
+        "research",
+        "sql",
+        "code"
+      ],
+      "selected_agents": [
+        "research",
+        "sql",
+        "code"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.48519999836571515,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "tool-005",
+      "category": "tool_selection",
+      "expected_agents": [
+        "research",
+        "sql"
+      ],
+      "selected_agents": [
+        "research",
+        "sql"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.5766999965999275,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "tool-006",
+      "category": "tool_selection",
+      "expected_agents": [
+        "research",
+        "code"
+      ],
+      "selected_agents": [
+        "research",
+        "code"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.0445000007166527,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "tool-007",
+      "category": "tool_selection",
+      "expected_agents": [
+        "research",
+        "sql"
+      ],
+      "selected_agents": [
+        "research",
+        "sql"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.8203999968827702,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "tool-008",
+      "category": "tool_selection",
+      "expected_agents": [
+        "research",
+        "code"
+      ],
+      "selected_agents": [
+        "research",
+        "code"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.6532999977935106,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "multi-001",
+      "category": "multi_agent_reasoning",
+      "expected_agents": [
+        "sql",
+        "code"
+      ],
+      "selected_agents": [
+        "sql",
+        "code"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.926900000195019,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "multi-002",
+      "category": "multi_agent_reasoning",
+      "expected_agents": [
+        "research",
+        "sql"
+      ],
+      "selected_agents": [
+        "research",
+        "sql"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.5815000040456653,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "multi-003",
+      "category": "multi_agent_reasoning",
+      "expected_agents": [
+        "research",
+        "sql"
+      ],
+      "selected_agents": [
+        "research",
+        "sql"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.7253000003402121,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "multi-004",
+      "category": "multi_agent_reasoning",
+      "expected_agents": [
+        "research",
+        "sql",
+        "code"
+      ],
+      "selected_agents": [
+        "research",
+        "sql",
+        "code"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.5397999993874691,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "multi-005",
+      "category": "multi_agent_reasoning",
+      "expected_agents": [
+        "sql",
+        "code"
+      ],
+      "selected_agents": [
+        "sql",
+        "code"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.5564000020967796,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "multi-006",
+      "category": "multi_agent_reasoning",
+      "expected_agents": [
+        "research",
+        "code"
+      ],
+      "selected_agents": [
+        "research",
+        "code"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.4715000031865202,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "multi-007",
+      "category": "multi_agent_reasoning",
+      "expected_agents": [
+        "research",
+        "sql"
+      ],
+      "selected_agents": [
+        "research",
+        "sql"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.3302999975858256,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "multi-008",
+      "category": "multi_agent_reasoning",
+      "expected_agents": [
+        "research",
+        "sql",
+        "code"
+      ],
+      "selected_agents": [
+        "research",
+        "sql",
+        "code"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.375000003259629,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "fail-001",
+      "category": "failure_recovery",
+      "expected_agents": [
+        "sql"
+      ],
+      "selected_agents": [
+        "sql"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.2179000002797693,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "fail-002",
+      "category": "failure_recovery",
+      "expected_agents": [
+        "code"
+      ],
+      "selected_agents": [
+        "code"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.19069999689236283,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "fail-003",
+      "category": "failure_recovery",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.18369999452261254,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "fail-004",
+      "category": "failure_recovery",
+      "expected_agents": [
+        "sql"
+      ],
+      "selected_agents": [
+        "sql"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.2843999973265454,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "fail-005",
+      "category": "failure_recovery",
+      "expected_agents": [
+        "code"
+      ],
+      "selected_agents": [
+        "code"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.2778999987640418,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "fail-006",
+      "category": "failure_recovery",
+      "expected_agents": [
+        "sql"
+      ],
+      "selected_agents": [
+        "sql"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.39790000300854445,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "fail-007",
+      "category": "failure_recovery",
+      "expected_agents": [
+        "research"
+      ],
+      "selected_agents": [
+        "research"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.5180000007385388,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "fail-008",
+      "category": "failure_recovery",
+      "expected_agents": [
+        "code"
+      ],
+      "selected_agents": [
+        "code"
+      ],
+      "expected_mode": "sequential",
+      "selected_mode": "sequential",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.6379999977070838,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "quant-001",
+      "category": "finance_workflows",
+      "expected_agents": [
+        "research",
+        "sql"
+      ],
+      "selected_agents": [
+        "research",
+        "sql"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.0710999995353632,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "quant-002",
+      "category": "finance_workflows",
+      "expected_agents": [
+        "sql",
+        "code"
+      ],
+      "selected_agents": [
+        "sql",
+        "code"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.1064999998779967,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "quant-003",
+      "category": "finance_workflows",
+      "expected_agents": [
+        "research",
+        "sql"
+      ],
+      "selected_agents": [
+        "research",
+        "sql"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 1.0221999982604757,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    },
+    {
+      "task_id": "quant-004",
+      "category": "finance_workflows",
+      "expected_agents": [
+        "research",
+        "sql",
+        "code"
+      ],
+      "selected_agents": [
+        "research",
+        "sql",
+        "code"
+      ],
+      "expected_mode": "parallel",
+      "selected_mode": "parallel",
+      "route_correct": true,
+      "mode_correct": true,
+      "success": false,
+      "latency_ms": 0.6139000033726916,
+      "tool_calls": 0,
+      "outcome": "failed",
+      "evaluation_score": 0.0,
+      "error": null
+    }
+  ],
+  "notes": [
+    "Metrics are measured locally against the current repository state.",
+    "Token usage and inference cost are not reported in Phase 1 because no production agent model calls are made by the benchmark.",
+    "Tool-call metrics are expected to remain zero until MCP/tool-backed agents are implemented."
+  ]
+}

@@ -1,0 +1,422 @@
+[
+  {
+    "id": "doc-001",
+    "category": "document_retrieval",
+    "prompt": "Find the market data runbook document for heartbeat recovery and cite the source.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "doc-002",
+    "category": "document_retrieval",
+    "prompt": "Search the uploaded documents for exchange gateway restart procedures.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "doc-003",
+    "category": "document_retrieval",
+    "prompt": "Use the knowledge base to summarize the risk escalation runbook.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "doc-004",
+    "category": "document_retrieval",
+    "prompt": "Retrieve source-backed details about stale symbols in the ingestion docs.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "doc-005",
+    "category": "document_retrieval",
+    "prompt": "Answer with citations from the operations handbook about replaying a sequence gap.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "doc-006",
+    "category": "document_retrieval",
+    "prompt": "Search documents for volatility spike handling guidance.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "doc-007",
+    "category": "document_retrieval",
+    "prompt": "Which document describes order gateway incident escalation criteria?",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "doc-008",
+    "category": "document_retrieval",
+    "prompt": "Use source material to explain the pre-market data quality checklist.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "rag-001",
+    "category": "multi_hop_rag",
+    "prompt": "Analyze the volatility incident using the research notes and cite each source.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "rag-002",
+    "category": "multi_hop_rag",
+    "prompt": "Use runbook documents and knowledge base context to explain why heartbeat age matters.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "rag-003",
+    "category": "multi_hop_rag",
+    "prompt": "Search docs and synthesize the relationship between dropped messages and stale symbols.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "rag-004",
+    "category": "multi_hop_rag",
+    "prompt": "Find source-backed evidence for the market-open incident workflow.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "rag-005",
+    "category": "multi_hop_rag",
+    "prompt": "Use documents to compare the recovery procedure for data gaps and worker failures.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "rag-006",
+    "category": "multi_hop_rag",
+    "prompt": "Analyze research notes for guidance on incident communication during volatility.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "rag-007",
+    "category": "multi_hop_rag",
+    "prompt": "Retrieve relevant docs and produce a citation-backed answer about risk limit sync.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "rag-008",
+    "category": "multi_hop_rag",
+    "prompt": "Use knowledge sources to summarize how operators should verify upstream market feeds.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "sql-001",
+    "category": "sql_querying",
+    "prompt": "Run a SQL query for average order latency by venue yesterday.",
+    "expected_agents": ["sql"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "sql-002",
+    "category": "sql_querying",
+    "prompt": "Show the database schema for tables that store trading signal metrics.",
+    "expected_agents": ["sql"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "sql-003",
+    "category": "sql_querying",
+    "prompt": "Query PostgreSQL for failed jobs grouped by queue.",
+    "expected_agents": ["sql"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "sql-004",
+    "category": "sql_querying",
+    "prompt": "Compare historical latency for NSE-FO and BSE-CASH from the database.",
+    "expected_agents": ["sql"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "sql-005",
+    "category": "sql_querying",
+    "prompt": "Generate a safe read-only query for the latest incident table rows.",
+    "expected_agents": ["sql"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "sql-006",
+    "category": "sql_querying",
+    "prompt": "Find p95 gateway latency by hour using SQL.",
+    "expected_agents": ["sql"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "sql-007",
+    "category": "sql_querying",
+    "prompt": "Inspect the database tables and return the schema for market data snapshots.",
+    "expected_agents": ["sql"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "sql-008",
+    "category": "sql_querying",
+    "prompt": "Query the usage table for token counts per user.",
+    "expected_agents": ["sql"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "code-001",
+    "category": "code_generation",
+    "prompt": "Write Python code to parse a latency log and compute p95.",
+    "expected_agents": ["code"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "code-002",
+    "category": "code_generation",
+    "prompt": "Inspect this traceback and suggest a code fix for the exception.",
+    "expected_agents": ["code"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "code-003",
+    "category": "code_generation",
+    "prompt": "Generate a Python function that validates read-only SQL.",
+    "expected_agents": ["code", "sql"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "code-004",
+    "category": "code_generation",
+    "prompt": "Create pytest tests for the tool-calling retry function.",
+    "expected_agents": ["code"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "code-005",
+    "category": "code_generation",
+    "prompt": "Fix a bug in the Python cache key builder.",
+    "expected_agents": ["code"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "code-006",
+    "category": "code_generation",
+    "prompt": "Write code for a sandboxed Python execution timeout wrapper.",
+    "expected_agents": ["code"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "code-007",
+    "category": "code_generation",
+    "prompt": "Analyze a failing unit test and propose the smallest function change.",
+    "expected_agents": ["code"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "code-008",
+    "category": "code_generation",
+    "prompt": "Use Python to compute rolling volatility from a returns series.",
+    "expected_agents": ["code"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "tool-001",
+    "category": "tool_selection",
+    "prompt": "Search documents, then run a SQL query to validate whether incident latency increased.",
+    "expected_agents": ["research", "sql"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "tool-002",
+    "category": "tool_selection",
+    "prompt": "Use the database schema and Python code to calculate a Sharpe-like diagnostic.",
+    "expected_agents": ["sql", "code"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "tool-003",
+    "category": "tool_selection",
+    "prompt": "Retrieve runbook documents and write Python code for the recovery checklist validator.",
+    "expected_agents": ["research", "code"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "tool-004",
+    "category": "tool_selection",
+    "prompt": "Get database schema, search docs, and inspect code paths for the order gateway incident.",
+    "expected_agents": ["research", "sql", "code"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "tool-005",
+    "category": "tool_selection",
+    "prompt": "Analyze historical signal performance and cite the relevant research document.",
+    "expected_agents": ["research", "sql"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "tool-006",
+    "category": "tool_selection",
+    "prompt": "Find the runbook source and generate Python code to verify the checklist.",
+    "expected_agents": ["research", "code"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "tool-007",
+    "category": "tool_selection",
+    "prompt": "Query latency tables and summarize the result with source-backed operational guidance.",
+    "expected_agents": ["research", "sql"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "tool-008",
+    "category": "tool_selection",
+    "prompt": "Inspect the exception, search docs, and create a Python regression test.",
+    "expected_agents": ["research", "code"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "multi-001",
+    "category": "multi_agent_reasoning",
+    "prompt": "Order-processing latency increased yesterday. Determine the likely cause using metrics, SQL, and code inspection.",
+    "expected_agents": ["sql", "code"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "multi-002",
+    "category": "multi_agent_reasoning",
+    "prompt": "Analyze a volatility spike using documents in the knowledge base and historical latency queries.",
+    "expected_agents": ["research", "sql"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "multi-003",
+    "category": "multi_agent_reasoning",
+    "prompt": "Compare two historical trading signals stored in the database and explain the research context.",
+    "expected_agents": ["research", "sql"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "multi-004",
+    "category": "multi_agent_reasoning",
+    "prompt": "Investigate stale symbols by searching docs, querying tables, and generating a diagnostic Python script.",
+    "expected_agents": ["research", "sql", "code"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "multi-005",
+    "category": "multi_agent_reasoning",
+    "prompt": "Determine whether a feature-writer deployment caused queue depth changes using SQL and code analysis.",
+    "expected_agents": ["sql", "code"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "multi-006",
+    "category": "multi_agent_reasoning",
+    "prompt": "Use research docs and Python analysis to explain a risk-limit synchronization anomaly.",
+    "expected_agents": ["research", "code"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "multi-007",
+    "category": "multi_agent_reasoning",
+    "prompt": "Run a historical database comparison and cite documents that explain the recovery workflow.",
+    "expected_agents": ["research", "sql"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "multi-008",
+    "category": "multi_agent_reasoning",
+    "prompt": "Inspect code, query PostgreSQL, and search documents for a production incident summary.",
+    "expected_agents": ["research", "sql", "code"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "fail-001",
+    "category": "failure_recovery",
+    "prompt": "Handle an invalid SQL query safely and explain the database error.",
+    "expected_agents": ["sql"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "fail-002",
+    "category": "failure_recovery",
+    "prompt": "Recover from a Python execution timeout while testing a slow function.",
+    "expected_agents": ["code"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "fail-003",
+    "category": "failure_recovery",
+    "prompt": "If document search fails, report that the source is unavailable instead of fabricating a citation.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "fail-004",
+    "category": "failure_recovery",
+    "prompt": "If the database connection is unavailable, fall back to a partial incident answer.",
+    "expected_agents": ["sql"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "fail-005",
+    "category": "failure_recovery",
+    "prompt": "When code inspection raises an exception, return the error and request a retry.",
+    "expected_agents": ["code"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "fail-006",
+    "category": "failure_recovery",
+    "prompt": "Detect malformed tool arguments for a schema query and stop safely.",
+    "expected_agents": ["sql"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "fail-007",
+    "category": "failure_recovery",
+    "prompt": "Search documents after a retrieval timeout and expose the failure if retries are exhausted.",
+    "expected_agents": ["research"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "fail-008",
+    "category": "failure_recovery",
+    "prompt": "Run Python code with invalid input and return a structured error.",
+    "expected_agents": ["code"],
+    "expected_mode": "sequential"
+  },
+  {
+    "id": "quant-001",
+    "category": "finance_workflows",
+    "prompt": "Analyze the implications of a volatility spike using research documents and historical market data queries.",
+    "expected_agents": ["research", "sql"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "quant-002",
+    "category": "finance_workflows",
+    "prompt": "Compare two trading signals stored in the database and generate Python code for a diagnostic chart.",
+    "expected_agents": ["sql", "code"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "quant-003",
+    "category": "finance_workflows",
+    "prompt": "Search the knowledge base for signal research and query the latest feature statistics.",
+    "expected_agents": ["research", "sql"],
+    "expected_mode": "parallel"
+  },
+  {
+    "id": "quant-004",
+    "category": "finance_workflows",
+    "prompt": "Investigate an exchange feed incident with runbook documents, database latency, and Python diagnostics.",
+    "expected_agents": ["research", "sql", "code"],
+    "expected_mode": "parallel"
+  }
+]

@@ -35,6 +35,9 @@ class Settings(BaseSettings):
     rate_limit_per_minute: int = 120
     max_upload_mb: int = 20
     log_level: str = "INFO"
+    max_tool_calls: int = 8
+    max_agent_iterations: int = 6
+    agent_request_timeout_seconds: float = 45.0
 
     @field_validator("allowed_origins", mode="before")
     @classmethod
