@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from collections.abc import AsyncGenerator
+from collections.abc import AsyncGenerator, Generator
 
 import pytest
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
@@ -28,7 +28,7 @@ async def session() -> AsyncGenerator[AsyncSession, None]:
 
 
 @pytest.fixture()
-def override_session(session: AsyncSession) -> None:
+def override_session(session: AsyncSession) -> Generator[None, None, None]:
     async def _get_session() -> AsyncGenerator[AsyncSession, None]:
         yield session
 

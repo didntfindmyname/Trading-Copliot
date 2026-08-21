@@ -38,7 +38,7 @@ class OpenAIChatProvider(LLMProvider):
         temperature: float = 0.2,
         timeout_seconds: float = 60.0,
     ) -> LLMResult:
-        openai_tools = [
+        openai_tools: list[dict[str, object]] = [
             {
                 "type": "function",
                 "function": {

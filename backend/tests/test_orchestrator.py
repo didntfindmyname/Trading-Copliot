@@ -62,5 +62,6 @@ async def test_orchestrator_reports_missing_phase_two_agent_without_fabricating_
     assert result.state.outcome == "failed"
     assert result.evaluation.passed is False
     assert result.state.completed_steps == []
+    assert result.agent_results[0].error is not None
     assert "not implemented in Phase 1" in result.agent_results[0].error
     assert "No tool calls were executed" in (result.state.final_answer or "")

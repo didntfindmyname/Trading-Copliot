@@ -77,8 +77,13 @@ class RequestRouter:
             agents.append("research")
 
         mode: ExecutionMode = "parallel" if len(agents) > 1 else "sequential"
-        rationale = f"Selected {', '.join(agents)} agent path for the request."
+        rationale = self._format_rationale(agents)
         return AgentRoute(agents=agents, mode=mode, rationale=rationale)
+
+    def _format_rationale(self, agents: list[AgentName]) -> str:
+        selected_agents = ", ".join(str(agent) for agent in agents)
+        label = "agent" if len(agents) == 1 else "agents"
+        return f"Selected {selected_agents} {label} for the request."
 
     def _matches(
         self,

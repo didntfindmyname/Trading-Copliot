@@ -15,6 +15,7 @@ def test_router_keeps_python_latency_log_work_in_code_agent() -> None:
 
     assert route.agents == ["code"]
     assert route.mode == "sequential"
+    assert route.rationale == "Selected code agent for the request."
 
 
 def test_router_recognizes_plural_documents_for_research_agent() -> None:
@@ -24,3 +25,4 @@ def test_router_recognizes_plural_documents_for_research_agent() -> None:
 
     assert route.agents == ["research", "sql"]
     assert route.mode == "parallel"
+    assert route.rationale == "Selected research, sql agents for the request."
