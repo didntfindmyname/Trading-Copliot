@@ -70,7 +70,15 @@ class RequestRouter:
         if self._matches(normalized, tokens, self.code_keywords):
             agents.append("code")
         if "code" in agents and "sql" in agents and "log" in tokens:
-            strong_sql_tokens = {"sql", "query", "database", "postgresql", "table", "tables", "schema"}
+            strong_sql_tokens = {
+                "sql",
+                "query",
+                "database",
+                "postgresql",
+                "table",
+                "tables",
+                "schema",
+            }
             if not strong_sql_tokens & tokens:
                 agents.remove("sql")
         if not agents:
